@@ -190,8 +190,6 @@ class GenerateDocumets:
             listStringColor =' '.join(map(str,flatStringColor))
             return listStringColor
 
-
-
 class GUI (ctk.CTk) :
     def __init__(self):
         super().__init__()
