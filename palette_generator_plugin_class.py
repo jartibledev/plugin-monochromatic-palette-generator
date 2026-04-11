@@ -4,6 +4,9 @@ import customtkinter as ctk
 import colorsys
 import os
 
+from pathlib import Path
+from tkinter import filedialog
+
 
 class FloatSpinbox(ctk.CTkFrame):
     def __init__(self, *args,
@@ -147,7 +150,8 @@ class GenerateDocumets:
     def __init__(self):
         pass
     
-    def createDocument(self, listrgbColorInput : list , archiveNameInput : str ):
+
+    def createDocument(self, listrgbColorInput : list , archiveNameInput : str, path_folder ):
         listStringcolor = self.listToString(listrgbColorInput)
         verticalListColorRgb = self.lineFeed ( listStringcolor)
 
@@ -156,10 +160,10 @@ class GenerateDocumets:
             archiveName = "Untitle"
         
         contentText = "Gimp  palette\nName: " + archiveName + "\n#" + "\n" + verticalListColorRgb 
-        self.writeDocument( archiveName, contentText)
+        self.writeDocument( archiveName, contentText, path_folder)
         
-    def writeDocument(self, archiveName, contentText):
-        folder =  r'C:\Users\Usuario\Desktop\prueba'
+    def writeDocument(self, archiveName, contentText, path_folder):
+        folder =  path_folder
         fileName= archiveName + ".gpl"
         path= os.path.join(folder, fileName)
 
@@ -201,7 +205,6 @@ class GUI (ctk.CTk) :
         ctk.set_appearance_mode("dark")      
 
 
-        
 
         self.stringVariableName = ctk.StringVar(self)
         self.infoWheelColor = ctk.CTkLabel (self, text="Select the color to create the palette:", text_color="#D4D4D4")
@@ -232,7 +235,14 @@ class GUI (ctk.CTk) :
         self.colorFrame = ctk.CTkScrollableFrame(self, fg_color = "transparent", scrollbar_button_hover_color="#7A7A7A", label_text="Your palette", label_text_color="#D4D4D4")
         self.colorFrame.pack(pady=20)
 
-        
+    def get_folder(self):
+        path_folder = filedialog.askdirectory(
+        title="Select your folder"
+        )
+        if path_folder:
+            print(f"Carpeta seleccionada: {path_folder}")
+            return path_folder
+
     def createFrames (self, numberColors, hexListColor):
         myColorFrame = self.colorFrame
         for widget in myColorFrame.winfo_children():
@@ -249,9 +259,10 @@ class GUI (ctk.CTk) :
         self.createFrames (numberColors = number, hexListColor=hexListColorInput  )
 
     def exportDocument(self):
+        folder_path = self.get_folder()
         name = self.entryNamePalette.get()
         listColorRgb = self.generatePalete.getRgbList
-        self.generateDocumets.createDocument(listrgbColorInput=listColorRgb, archiveNameInput=name)    
+        self.generateDocumets.createDocument(listrgbColorInput=listColorRgb, archiveNameInput=name, path_folder=folder_path)    
 
     def getNumber (self):
         number = self.spinbox.get()
