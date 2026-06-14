@@ -1,3 +1,4 @@
+# [:es:](README_ES.md) [:de:](README_DE.md) [:uk:](README.md) 
 # Générateur de Palettes Monochromatiques
 
 Un outil indépendant qui génère des palettes de couleurs monochromatiques et les exporte pour une utilisation dans des logiciels de conception open source tels que GIMP, Krita et Inkscape.

@@ -1,3 +1,4 @@
+# [:fr:](README_FR.md) [:de:](README_DE.md) [:es:](README.md) 
 # Monochromatic Palette Generator
 
 A standalone tool that generates monochromatic color palettes and exports them for use in open-source design software like GIMP, Krita, and Inkscape.
@@ -17,7 +18,7 @@ A standalone tool that generates monochromatic color palettes and exports them f
 
 1. Download or clone this repository to your local machine:
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
+   git clone [https://github.com/jartibledev/plugin-monochromatic-palette-generator.git](https://github.com/jartibledev/plugin-monochromatic-palette-generator.git)
 2. Navigate to the dist directory.
 3. Double-click the .exe file to launch the program.
 4. (Recommended): For easier access, right-click the .exe file and select Create shortcut, then drag the shortcut to your Desktop.
