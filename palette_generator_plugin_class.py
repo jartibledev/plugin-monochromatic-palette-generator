@@ -159,7 +159,8 @@ class GenerateDocumets:
         if not archiveName:
             archiveName = "Untitle"
         
-        contentText = "Gimp  palette\nName: " + archiveName + "\nColumns: 0" + "\n#" + "\n" + verticalListColorRgb 
+        
+        contentText = "GIMP  Palette\nName: " + archiveName + "\nColumns: 0" + "\n#" + "\n" + verticalListColorRgb 
         self.writeDocument( archiveName, contentText, path_folder)
         
     def writeDocument(self, archiveName, contentText, path_folder):
@@ -176,15 +177,20 @@ class GenerateDocumets:
         listStringColor = newArrayStringColor.split()
         lineFeed = "\n"
         arrayStringText = []
-
+        print(listStringColor)
         for i, element in enumerate(listStringColor):
             arrayStringText.append(element)
             if (i + 1) % 3 == 0:
+                
                 arrayStringText.append(lineFeed)
             
             contentText = " ".join(arrayStringText)
+        withoutspaces = contentText.replace("\n ", "\n")
+        print(withoutspaces) 
+            
+            
 
-        return contentText
+        return withoutspaces
         
     def listToString (self, listRgbColorInput):
             newListrgbColor = listRgbColorInput 
