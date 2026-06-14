@@ -1,84 +1,46 @@
+# Monochromatic Palette Generator
 
-> [!CAUTION]
-> This project is developing, don´t download it.
+A standalone tool that generates monochromatic color palettes and exports them for use in open-source design software like GIMP, Krita, and Inkscape.
 
->## Automatization
-<!-- Image Cover -->
-![Illustration Cover](images_github_template/illustration_cover.jpg)
+## 🌟 Features
 
-<!-- HeadLine -->
-# Monochromatic Palette
+* **Custom Color Count:** Easily select the exact number of colors you want in your monochromatic palette.
+* **Universal .GPL Export:** Automatically exports your generated palettes in the standard `.gpl` (GIMP Palette) format, making them instantly compatible with GIMP, Krita, and Inkscape.
+* **Standalone Application:** No complex installation required. Just run the executable and start generating palettes.
 
-<!-- Dropline -->
-## A pluggin to create a monochromatic palette in a one click
+## 📋 Prerequisites
 
-<!-- Lead -->
-An small app to generates a monochromatic palette. <br/>
+* **OS:** Windows (to run the `.exe` file).
+* **Target Software:** GIMP, Krita, or Inkscape (to use the generated `.gpl` files).
 
-<!-- Body -->
-This project isn´t finished yet.
+## 🚀 Installation & Usage
 
-<!-- Index -->
-## Index
-[How to install app](#how-to-install-app) <br/>
-[How to use the app](#functions) <br/>
-[Issues](#issues) <br/>
-[How I made this project](#how-i-made-this-project)<br/>
+1. Download or clone this repository to your local machine:
+   ```bash
+   git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
+2. Navigate to the dist directory.
+3. Double-click the .exe file to launch the program.
+4. (Recommended): For easier access, right-click the .exe file and select Create shortcut, then drag the shortcut to your Desktop.
+## 🎨 How to Import Your .GPL Palettes
 
-## Functions
-| | |
-|:---:| :---: |
-| ![gif](https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif) | ![gif](https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif) |
-| meme function | also meme function |
+Once you have generated your `.gpl` file using this program, you can easily import it into your favorite design software:
 
-<!-- Instructions -->
-## How to install app
-You can install this app with the folowing command:
-```
-git clone repository
-git other steps
-```
-## Usage 
-### How to use the software
-### How to use the module
+### In GIMP
+1. Open GIMP and go to **Edit > Preferences**.
+2. Scroll down the left menu, expand **Folders**, and click on **Palettes**.
+3. You will see a list of folder paths. Click on the one that is inside your user directory (usually the top one) to highlight it, then click the **"Show file location in the file manager"** button (the cabinet icon at the top right).
+4. Copy your generated `.gpl` file into that folder.
+5. In GIMP, open your Palettes dialog (**Windows > Dockable Dialogs > Palettes**) and click the **Configure this tab** icon (the little triangle), then select **Palettes Menu > Refresh Palettes**.
 
-## Issues
+### In Krita
+1. Open Krita and go to **Settings > Manage Resources**.
+2. Click on **Open Resource Folder**.
+3. Open the `palettes` folder and copy your `.gpl` file inside.
+4. Restart Krita, or open the Palette Docker (**Settings > Dockers > Palette**), click on the folder icon at the bottom left of the docker, and select your new palette from the list.
 
-<!-- Technical explanation -->
-## How I made this project
-
-  <!-- Index memory-->
-  ### Index
-  [Problem](#problem) <br/>
-  [Architecture design](#architecture-design) <br/>
-  [Ui Design](#ui-design) <br/>
-  [Code tutorial](#code-tutorial) <br/>
-  
-  ### Problem
-  ### Architecture design
-  ### UI Design
-  ### Code tutorial
-
-## Get information 
-
-
-## About the author 
-
-
-## Developement
-
-### Install Requirement
-
-### How to Build the Software
-
-### How to Build the Module
-
-
-## Copyright
-
-## License
-
-## Contributing
-
-## More information
->>>>>>> develop
+### In Inkscape
+1. Open your File Explorer.
+2. Navigate to Inkscape's custom palettes folder. This is typically located at:
+   * **Windows:** `%appdata%\inkscape\palettes`
+3. Paste your generated `.gpl` file into this folder.
+4. Restart Inkscape. Your new palette will now be available by clicking the small arrow at the extreme right of the color palette bar at the bottom of the screen.
