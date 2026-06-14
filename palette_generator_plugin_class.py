@@ -159,7 +159,7 @@ class GenerateDocumets:
         if not archiveName:
             archiveName = "Untitle"
         
-        contentText = "Gimp  palette\nName: " + archiveName + "\n#" + "\n" + verticalListColorRgb 
+        contentText = "Gimp  palette\nName: " + archiveName + "\nColumns: 0" + "\n#" + "\n" + verticalListColorRgb 
         self.writeDocument( archiveName, contentText, path_folder)
         
     def writeDocument(self, archiveName, contentText, path_folder):
