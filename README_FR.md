@@ -4,10 +4,10 @@
 Un outil indépendant qui génère des palettes de couleurs monochromatiques et les exporte pour une utilisation dans des logiciels de conception open source tels que GIMP, Krita et Inkscape.
 
 ## 🌟 Fonctionnalités
-
-* **Nombre de Couleurs Personnalisé :** Sélectionnez facilement le nombre exact de couleurs que vous souhaitez dans votre palette monochromatique.
-* **Exportation Universelle .GPL :** Exporte automatiquement vos palettes générées au format standard `.gpl` (Palette GIMP), les rendant instantanément compatibles avec GIMP, Krita et Inkscape.
-* **Application Indépendante :** Aucune installation complexe n'est requise. Il suffit de lancer l'exécutable et de commencer à générer des palettes.
+| | | |
+|:---:| :---: | :---: | 
+| ![Texto alternativo](./media/gif_1.gif) | ![Texto alternativo](./media/gif_2.gif) | ![Texto alternativo](./media/gif_3.gif) | 
+|* **Nombre de Couleurs Personnalisé :** Sélectionnez facilement le nombre exact de couleurs que vous souhaitez dans votre palette monochromatique. | * **Exportation Universelle .GPL :** Exporte automatiquement vos palettes générées au format standard `.gpl` (Palette GIMP), les rendant instantanément compatibles avec GIMP, Krita et Inkscape. | * **Application Indépendante :** Aucune installation complexe n'est requise. Il suffit de lancer l'exécutable et de commencer à générer des palettes. |
 
 ## 📋 Prérequis
 
