@@ -1,4 +1,4 @@
-('C:\\Users\\Usuario\\Desktop\\projects\\projects_dev\\dev\\projects\\palette-generator\\links\\new_palette\\build\\palette_generator_plugin_class\\PYZ-00.pyz',
+('C:\\Users\\Usuario\\Desktop\\projects\\projects_dev\\plugins\\palette-generator\\links\\new_palette\\build\\palette_generator_plugin_class\\PYZ-00.pyz',
  [('CTkColorPicker',
    'C:\\Users\\Usuario\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\CTkColorPicker\\__init__.py',
    'PYMODULE'),
