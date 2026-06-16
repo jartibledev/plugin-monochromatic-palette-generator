@@ -18,7 +18,7 @@ Una herramienta independiente que genera paletas de colores monocromáticas y la
 
 1. Descarga o clona este repositorio en tu máquina local:
    ```bash
-  git clone [https://github.com/jartibledev/plugin-monochromatic-palette-generator.git](https://github.com/jartibledev/plugin-monochromatic-palette-generator.git)
+   git clone [https://github.com/jartibledev/plugin-monochromatic-palette-generator.git](https://github.com/jartibledev/plugin-monochromatic-palette-generator.git)
 2. Navega al directorio dist.
 3. Haz doble clic en el archivo .exe para iniciar el programa.
 4. (Recomendado): Para un acceso más fácil, haz clic derecho sobre el archivo .exe, selecciona Crear acceso directo, y luego arrastra el acceso directo a tu Escritorio.
